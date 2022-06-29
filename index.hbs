@@ -4,7 +4,7 @@ into the {body} of the default.hbs template --}}
 
 {{!-- Main --}}
 <main id="main">
-
+    {{> homecontent}}
     {{!-- Featured Post --}}
     {{#is "home"}}
     {{#get "posts" filter="featured:true" limit="1" as |featured_post|}}
