@@ -5,10 +5,18 @@ into the {body} of the default.hbs template --}}
 
 {{!-- Main --}}
 <main id="main">
-    {{#page}}
-	{{content}}
-	{{/page}}
-	    
+	{{#post}}
+	<div id="maincontent" style="">
+        <header class="major">
+            <h1>{{title}}</h1>
+        </header>
+    
+        {{content}}
+
+    </div>
+    {{/post}}
+
+    
  
 
 </main>
